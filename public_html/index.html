@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>my website !! </title>     
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        
+        <div class="banner"> 
+
+<!-- Navbar -->
+
+            <div class="navbar"> 
+               <img src="logo.png" id="logoImage" class="logo">
+                <ul>
+                    <li><a href="#home">Home ✮</a></li>
+                    <li><a href="#about">About Me ♥︎‪</a></li>
+                    <li><a href="#courses">Courses ❀</a></li>
+                    <li><a href="#contact">Contact ☏</a></li>
+                    <li><button class="dark-toggle" onclick="toggleDarkMode()">🌚</button></li>
+                </ul>
+                <span id="clock" class="clock"></span>
+            </div> 
+
+            <!--<img src="hearts.gif" style="margin: 10%;" alt="hearts">-->
+
+<!-- Banner -->
+
+            <div class="content" id="home">
+                <h1 id="greeting">Hi, Welcome to my website!!</h1><br>
+                <h2> I'm Zunairah Tariq 💌</h2>
+                <p>click on the header tags to find out more about me :)</p>
+            </div>
+        </div>
+    
+
+<!-- About Me --> 
+
+           <section>       
+            <div class="aboutme" id="about">               
+                <h1>About me</h1>
+                <img src="melogo.png" class="logo">
+
+                    <p>Hello <3 My name is Zunairah Tariq. I'm a second year university student majoring in IT Networking and Security.
+                     I am orginally from Karachi,Pakistan but I've been born and brought up here in the UAE.
+                     I'm someone who loves creating, learning, and finding beauty in the little things.
+                     Whether it's designing, coding, or just exploring new ideas, I'm always up for something exciting. 
+                     Beyond work, I appreciate a good cup of karak chai, reading, 
+                     and just casually spending time with my friends.
+                     This website is a reflection of me—simple, fun, and always evolving. 
+                     Feel free to look around and get to know me a little better.</p>           
+        </div>
+        </section> 
+
+<!-- Courses  -->     
+
+        <section class="courses" id="courses">
+            <img src="studyme.gif" alt="study" style="height: 10%; width: 40%;">
+            <h1>Favorite Courses</h1><br>
+            <div class="course-carousel">
+              <div class="slider-track">
+                    <div class="course-box">
+                        <h2>World Literature</h2>
+                        <p>Absolutely loved this class! It involves exploring classic and modern literature helps me understand different cultures and perspectives. My favorite 
+                            literary work we worked on was "The Alchemist". </p>
+                    </div>
+
+                    <div class="course-box">
+                        <h2>Web Systems</h2>
+                        <p>I love learning how to design and develop interactive websites with HTML, CSS, and JavaScript! 
+                            Although the assignments can be lengthy and time-consuming, once i start working on them, its like playing a game </p>
+                    </div>
+
+                    <div class="course-box">
+                        <h2>Data Comms & Networking</h2>
+                        <p>In this course i find understanding how data flows through networks truly fascinating and essential for IT security. Learning about the individual 
+                            OSI layers is so interesting to me.</p>
+                   </div>
+
+                   <div class="course-box">
+                       <h2>Intro. to Calculus</h2>
+                       <p><p>Although math isn’t always easy, I’ve grown to enjoy how calculus teaches you to see the world through curves and changes.</p>
+                    </p>
+                    </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button onclick="prevCourse()">←</button>
+              <button onclick="nextCourse()">→</button>
+            </div>
+        </section>
+
+<!-- Contact Form -->
+
+        <section>       
+            <div class="contactme" id="contact">               
+                <h1>Contact Me</h1>       
+                <p>Feel free to reach out to me!</p> <br>
+                
+                <form class="contact-form">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="text" id="contactEmail" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>  
+            </div>
+        </section>
+
+<!-- Welcome Overlay -->
+            <div class="overlay" id="welcomeOverlay">
+                <div class="welcome-box">
+                <p style="font-size: 40px;">Hi there, Welcome to my website 🌷</p>
+                    <p>what's your name?</p>
+                <input type="text" id="visitorName" placeholder="Enter your name..." />
+                <button onclick="submitName()">Enter</button>
+                </div>
+            </div>
+            
+<!-- Scroll Down Button -->
+        <!--<button class="scroll-btn scroll-down" id="scrollDownBtn">🪴</button>-->
+
+<!-- Scroll Up Button -->
+        <button class="scroll-btn scroll-up" id="scrollUpBtn" style="transform: rotate(-90deg);"> ➜  </button>
+
+    </body>
+</html>
